@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\r\n    margin: 0px;\r\n    background-color: rgb(19, 18, 18);\r\n    font-family: 'JetBrains Mono', monospace;\r\n}\r\n\r\nh4 {\r\n    font-size: 2rem;\r\n    text-align: center;\r\n    margin-top: 35px;\r\n    margin-bottom: 35px;\r\n    color: #ffff;\r\n}\r\n#title{\r\n    color: rgb(255, 240, 240);\r\n    border: 1px solid rgb(255, 255, 255) \r\n}\r\ncanvas {\r\n\r\n    \r\n    margin-bottom: 1%;\r\n    background-color: #ffff;\r\n}\r\n\r\n.container {\r\n    display: flex;\r\n\tflex-wrap: wrap;\r\n    justify-content: center;\r\n    margin-bottom: 1%;\r\n}\r\n\r\nselect {\r\n    width: 30%;\r\n    height: 10%;\r\n    height: 50px;\r\n    font-size: 1em;\r\n    font-family: 'JetBrains Mono', monospace;\r\n    color: grey;\r\n}\r\n\r\n#binary {\r\n    width: 50%;\r\n    font-size: 20px;\r\n    font-family: 'JetBrains Mono', monospace;\r\n}\r\n\r\n.btn-submit{\r\n\r\n    border: 1px solid rgb(255, 255, 255) ;\r\n\r\n    padding: 8px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 4px;\r\n    margin-left: 1px;\r\n    transition-duration: 0.4s;\r\n    cursor: pointer;\r\n    background-color: rgb(0, 0, 0);\r\n    color: #ffff;\r\n}\r\n\r\n.btn-submit:active {\r\n    background-color: rgb(255, 255, 255);\r\n    color: rgb(0, 0, 0);\r\n\r\n}\r\n\r\n\r\n.collapsible {\r\n    font-family: 'JetBrains Mono', monospace;\r\n    background-color: #777;\r\n    color: white;\r\n    cursor: pointer;\r\n    padding: 2px 0px 2px 2px;\r\n    width: 100%;\r\n    border: none;\r\n    text-align: left;\r\n    outline: none;\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .active, .collapsible:hover {\r\n    background-color: #555;\r\n  }\r\n  \r\n  .content {\r\n    padding: 0 18px;\r\n    max-height: 0;\r\n    overflow: hidden;\r\n    transition: max-height 0.2s ease-out;\r\n    background-color: #f1f1f1;\r\n  }\r\n\r\n\r\n\r\nol {\r\n    list-style-type: none;\r\n    line-height:200%\r\n}\r\n.footer{\r\n    margin-top: 3em;\r\n    text-align: center;\r\n}", "",{"version":3,"sources":["webpack://./src/js/styles.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,iCAAiC;IACjC,wCAAwC;AAC5C;;AAEA;IACI,eAAe;IACf,kBAAkB;IAClB,gBAAgB;IAChB,mBAAmB;IACnB,YAAY;AAChB;AACA;IACI,yBAAyB;IACzB;AACJ;AACA;;;IAGI,iBAAiB;IACjB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;CAChB,eAAe;IACZ,uBAAuB;IACvB,iBAAiB;AACrB;;AAEA;IACI,UAAU;IACV,WAAW;IACX,YAAY;IACZ,cAAc;IACd,wCAAwC;IACxC,WAAW;AACf;;AAEA;IACI,UAAU;IACV,eAAe;IACf,wCAAwC;AAC5C;;AAEA;;IAEI,qCAAqC;;IAErC,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,qBAAqB;IACrB,eAAe;IACf,kBAAkB;IAClB,gBAAgB;IAChB,yBAAyB;IACzB,eAAe;IACf,8BAA8B;IAC9B,YAAY;AAChB;;AAEA;IACI,oCAAoC;IACpC,mBAAmB;;AAEvB;;;AAGA;IACI,wCAAwC;IACxC,sBAAsB;IACtB,YAAY;IACZ,eAAe;IACf,wBAAwB;IACxB,WAAW;IACX,YAAY;IACZ,gBAAgB;IAChB,aAAa;IACb,eAAe;EACjB;;EAEA;IACE,sBAAsB;EACxB;;EAEA;IACE,eAAe;IACf,aAAa;IACb,gBAAgB;IAChB,oCAAoC;IACpC,yBAAyB;EAC3B;;;;AAIF;IACI,qBAAqB;IACrB;AACJ;AACA;IACI,eAAe;IACf,kBAAkB;AACtB","sourcesContent":["body {\r\n    margin: 0px;\r\n    background-color: rgb(19, 18, 18);\r\n    font-family: 'JetBrains Mono', monospace;\r\n}\r\n\r\nh4 {\r\n    font-size: 2rem;\r\n    text-align: center;\r\n    margin-top: 35px;\r\n    margin-bottom: 35px;\r\n    color: #ffff;\r\n}\r\n#title{\r\n    color: rgb(255, 240, 240);\r\n    border: 1px solid rgb(255, 255, 255) \r\n}\r\ncanvas {\r\n\r\n    \r\n    margin-bottom: 1%;\r\n    background-color: #ffff;\r\n}\r\n\r\n.container {\r\n    display: flex;\r\n\tflex-wrap: wrap;\r\n    justify-content: center;\r\n    margin-bottom: 1%;\r\n}\r\n\r\nselect {\r\n    width: 30%;\r\n    height: 10%;\r\n    height: 50px;\r\n    font-size: 1em;\r\n    font-family: 'JetBrains Mono', monospace;\r\n    color: grey;\r\n}\r\n\r\n#binary {\r\n    width: 50%;\r\n    font-size: 20px;\r\n    font-family: 'JetBrains Mono', monospace;\r\n}\r\n\r\n.btn-submit{\r\n\r\n    border: 1px solid rgb(255, 255, 255) ;\r\n\r\n    padding: 8px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 4px;\r\n    margin-left: 1px;\r\n    transition-duration: 0.4s;\r\n    cursor: pointer;\r\n    background-color: rgb(0, 0, 0);\r\n    color: #ffff;\r\n}\r\n\r\n.btn-submit:active {\r\n    background-color: rgb(255, 255, 255);\r\n    color: rgb(0, 0, 0);\r\n\r\n}\r\n\r\n\r\n.collapsible {\r\n    font-family: 'JetBrains Mono', monospace;\r\n    background-color: #777;\r\n    color: white;\r\n    cursor: pointer;\r\n    padding: 2px 0px 2px 2px;\r\n    width: 100%;\r\n    border: none;\r\n    text-align: left;\r\n    outline: none;\r\n    font-size: 15px;\r\n  }\r\n  \r\n  .active, .collapsible:hover {\r\n    background-color: #555;\r\n  }\r\n  \r\n  .content {\r\n    padding: 0 18px;\r\n    max-height: 0;\r\n    overflow: hidden;\r\n    transition: max-height 0.2s ease-out;\r\n    background-color: #f1f1f1;\r\n  }\r\n\r\n\r\n\r\nol {\r\n    list-style-type: none;\r\n    line-height:200%\r\n}\r\n.footer{\r\n    margin-top: 3em;\r\n    text-align: center;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -585,6 +585,7 @@ document.getElementById('button').onclick = function () {
 };
 
 function drawBoard() {
+  //outer box
   c.clearRect(0, 0, canvas.width, canvas.height);
   c.beginPath();
   c.moveTo(5, 5);
@@ -594,14 +595,15 @@ function drawBoard() {
   c.lineTo(5, HEIGHT - 5);
   c.lineTo(5, 5);
   c.stroke();
-  c.closePath();
+  c.closePath(); //oV line
+
   c.beginPath();
   c.moveTo(50, HEIGHT / 2);
   c.lineTo(WIDTH - 5, HEIGHT / 2);
   c.setLineDash([10, 5]);
   c.lineWidth = 2;
   c.stroke();
-  c.closePath();
+  c.closePath(); //Horizontal lines
 
   for (var i = 50, j = 0; i <= 50 * BINARY.length + 50; i += 50, j++) {
     c.beginPath();
@@ -612,7 +614,8 @@ function drawBoard() {
     c.stroke();
     c.closePath();
     drawNumbers(i, j);
-  }
+  } //-v line
+
 
   c.beginPath();
   c.moveTo(50, HEIGHT / 2 + 50);
@@ -620,7 +623,8 @@ function drawBoard() {
   c.setLineDash([10, 5]);
   c.lineWidth = 2;
   c.stroke();
-  c.closePath();
+  c.closePath(); //+v line
+
   c.beginPath();
   c.moveTo(50, HEIGHT / 2 - 50);
   c.lineTo(WIDTH - 5, HEIGHT / 2 - 50);
@@ -643,17 +647,9 @@ function init() {
   drawBoard();
   console.log(method);
   Object(_formulas__WEBPACK_IMPORTED_MODULE_1__["selectMethod"])(method, c, BINARY, HEIGHT, WIDTH);
-} // Animation Loop
-
-
-function animate() {
-  requestAnimationFrame(animate);
-  c.clearRect(0, 0, canvas.width, canvas.height);
-  c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y);
 }
 
-init(); // drawBoard()
-// animate()
+init();
 
 /***/ }),
 
