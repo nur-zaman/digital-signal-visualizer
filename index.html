@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <!-- <meta charset="UTF-8" /> -->
+  <title>Digital Signal Visualizer</title>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico"></head>
+
+<body>
+  <h4>DIGITAL SIGNAL VISUALIZER</h4>
+  <h4 id='title'></h6>
+  <div class="container">
+    <select id="options">
+      <option  value="uniPolarNRZ" >Unipolar NRZ</option>
+      <option value="NRZI" >NRZ - I</option>
+      <option  value="AMI">Bi polar AMI</option>
+      <option  value="diffMan" >Differential Manchester</option>
+      <option  value="MAN" >Manchester</option>
+      <option  value="B8ZS" >B8ZS</option>
+    </select><br>
+  </div>
+  <div class="container">
+    <input type="text" id="binary" placeholder="Enter Binary Value"><br><br>
+    <input class="btn-submit" id="button" type="submit" value="Submit"><br><br>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <button type="button" class="collapsible"><span id='arrow' class="fas fa-caret-right" aria-hidden="true"></span> <span
+      style="font-size: larger;">Read More</span> </button>
+  <div class="content">
+    <ol id="ordered-list">
+      <li class="section"><span>Non-return-to-zero(NRZ) : </span><a href ="https://en.wikipedia.org/wiki/Non-return-to-zero" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Non-return-to-zero</a><br><br></li>
+      <li  class="section"><span>Bipolar encoding : </span><a href="https://en.wikipedia.org/wiki/Bipolar_encoding" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Bipolar_encoding</a><br><br></li>
+      <li  class="section"><span>Differential Manchester encoding : </span><a href="https://en.wikipedia.org/wiki/Differential_Manchester_encoding" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Differential_Manchester_encoding</a><br><br></li>
+      <li  class="section"><span>Manchester code : </span><a href="https://en.wikipedia.org/wiki/Manchester_code" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Manchester_code</a><br><br></li>
+    </ol>
+  </div>
+<div class="footer"><span ><a style="color: white;" href="https://github.com/nur-zaman/digital-signal-visualizer" target="_blank" rel="noopener noreferrer">Github</a></span></div>
+  <!-- <script type="text/javascript">
+
+
+  </script> -->
+
+
+
+<script src="./js/canvas.bundle.js"></script></body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Digital Signal Visualizer</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+
+      <input type="text" id="binary" ><br><br>
+      <input type="submit" value="Submit">
+
+    <canvas></canvas>
+  </body>
+</html>
