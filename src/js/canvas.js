@@ -71,6 +71,7 @@ if((/^[0-1]/.test(BINARY))){
 
 
 function drawBoard() {
+  //outer box
   c.clearRect(0, 0, canvas.width, canvas.height)
   c.beginPath(); 
   c.moveTo(5,5);
@@ -82,6 +83,7 @@ function drawBoard() {
   c.stroke();
   c.closePath()
 
+  //oV line
   c.beginPath();
   c.moveTo(50, HEIGHT / 2)
   c.lineTo(WIDTH-5,HEIGHT / 2)
@@ -90,7 +92,7 @@ function drawBoard() {
   c.stroke();
    c.closePath()
 
-  
+  //Horizontal lines
   for (let i = 50,j=0; i <=(50*BINARY.length)+50; i += 50,j++) 
   {
     c.beginPath();
@@ -102,7 +104,7 @@ function drawBoard() {
   c.closePath()
   drawNumbers(i,j)
  }
-
+//-v line
  c.beginPath();
  c.moveTo(50, (HEIGHT / 2 )+50)
  c.lineTo(WIDTH-5,(HEIGHT / 2 )+50)
@@ -111,7 +113,7 @@ function drawBoard() {
  c.stroke();
   c.closePath()
 
-
+//+v line
   c.beginPath();
   c.moveTo(50, (HEIGHT / 2 )-50)
   c.lineTo(WIDTH-5,(HEIGHT / 2 ) - 50)
@@ -127,7 +129,6 @@ function drawBoard() {
 }
 
 function drawNumbers(i,j){
-   
   c.font = 'bold 20px sans-serif';
   if(j<BINARY.length)
   c.fillText(BINARY.charAt(j)+"", i+25, 30)
@@ -137,23 +138,6 @@ function init() {
   canvas.width = WIDTH
   drawBoard()
   console.log(method)
- 
 selectMethod(method , c,BINARY,HEIGHT,WIDTH )
-
-
-
-  }
-
-
-// Animation Loop
-function animate() {
-  requestAnimationFrame(animate)
-  c.clearRect(0, 0, canvas.width, canvas.height)
-
-  c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y)
-
 }
-
 init()
-// drawBoard()
-// animate()
