@@ -1,5 +1,5 @@
 import utils, { getInputValue, randomIntFromRange } from './utils'
-import formulas, { uniPolarNRZ , NRZI ,AMI , diffMan ,MAN , B8ZS , selectMethod} from './formulas'
+import formulas, {selectMethod} from './formulas'
 import "./styles.css";
 
 const canvas = document.querySelector('canvas')
@@ -137,7 +137,6 @@ function drawNumbers(i,j){
 function init() {
   canvas.width = WIDTH
   drawBoard()
-  console.log(method)
 selectMethod(method , c,BINARY,HEIGHT,WIDTH )
 }
 init()
