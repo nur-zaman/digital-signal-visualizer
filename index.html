@@ -3,111 +3,11 @@
 <head>
   <!-- <meta charset="UTF-8" /> -->
   <title>Digital Signal Visualizer</title>
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
-<style>body {
-  margin: 0px;
-  background-color: rgb(19, 18, 18);
-  font-family: 'JetBrains Mono', monospace;
-}
-
-h4 {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  color: #ffff;
-}
-
-#title {
-  color: rgb(255, 240, 240);
-  border: 1px solid rgb(255, 255, 255);
-}
-
-canvas {
-  margin-bottom: 1%;
-  background-color: #ffff;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1%;
-}
-
-select {
-  width: 30%;
-  height: 10%;
-  height: 50px;
-  font-size: 1em;
-  font-family: 'JetBrains Mono', monospace;
-  color: grey;
-}
-
-#binary {
-  width: 50%;
-  font-size: 20px;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.btn-submit {
-  border: 1px solid rgb(255, 255, 255);
-  padding: 8px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  margin-left: 1px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  color: #ffff;
-}
-
-.btn-submit:active {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.collapsible {
-  font-family: 'JetBrains Mono', monospace;
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 2px 0px 2px 2px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-ol {
-  list-style-type: none;
-  line-height: 200%;
-}
-
-.footer {
-  margin-top: 3em;
-  text-align: center;
-}</style>
+<style>body{margin:0;background-color:rgb(19, 18, 18);font-family:'JetBrains Mono', monospace}h4{font-size:2rem;text-align:center;margin-top:35px;margin-bottom:35px;color:#ffff}#title{color:rgb(255, 240, 240);border:1px solid rgb(255, 255, 255)}canvas{margin-bottom:1%;background-color:#ffff}.container{display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1%}select{width:30%;height:10%;height:50px;font-size:1em;font-family:'JetBrains Mono', monospace;color:grey}#binary{width:50%;font-size:20px;font-family:'JetBrains Mono', monospace}.btn-submit{border:1px solid rgb(255, 255, 255);padding:8px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;border-radius:4px;margin-left:1px;transition-duration:0.4s;cursor:pointer;background-color:rgb(0, 0, 0);color:#ffff}.btn-submit:active{background-color:rgb(255, 255, 255);color:rgb(0, 0, 0)}.collapsible{font-family:'JetBrains Mono', monospace;background-color:#777;color:white;cursor:pointer;padding:2px 0 2px 2px;width:100%;border:none;text-align:left;outline:none;font-size:15px}.active,.collapsible:hover{background-color:#555}.content{padding:0 18px;max-height:0;overflow:hidden;transition:max-height 0.2s ease-out;background-color:#f1f1f1}ol{list-style-type:none;line-height:200%}.footer{margin-top:3em;text-align:center}</style>
   <link rel="icon" href="favicon.ico"></head>
 
 <body>
@@ -116,11 +16,15 @@ ol {
   <div class="container">
     <select id="options">
       <option  value="uniPolarNRZ" >Unipolar NRZ</option>
+      <option value="NRZL" >NRZ - L</option>
       <option value="NRZI" >NRZ - I</option>
       <option  value="AMI">Bi polar AMI</option>
+      <option  value="PST">Pseudoternary</option>
+      <option  value="MLT3">MLT-3</option>
       <option  value="diffMan" >Differential Manchester</option>
       <option  value="MAN" >Manchester</option>
       <option  value="B8ZS" >B8ZS</option>
+      <option  value="HDB3" >HDB3</option>
     </select><br>
   </div>
   <div class="container">
